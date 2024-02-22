@@ -143,6 +143,7 @@
   font-weight: var(--fw-500);
   display: flex;
   justify-content: center;
+  flex-direction: column;
 }
 
 .about-list .strong {

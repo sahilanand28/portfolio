@@ -1,360 +1,307 @@
 <main>
-    <article>
-
-      <!-- 
+  <article>
+    <!-- 
         - #HERO
       -->
 
-      <section class="section hero" aria-label="home">
-        <div class="container">
+    <section class="section hero" aria-label="home">
+      <div class="container">
+        <div class="hero-content">
+          <p class="hero-subtitle">Hello, My name is Sahil Anand</p>
 
-          <div class="hero-content">
+          <h1 class="headline-lg">I'm a Front-End Developer</h1>
 
-            <p class="hero-subtitle">Hello, My name is Sahil Anand</p>
+          <p class="hero-text body-md">Based in Siegen, Germany.</p>
 
-            <h1 class="headline-lg">I'm a Front-End Developer</h1>
-
-            <p class="hero-text body-md">
-              Based in Siegen, Germany.
-            </p>
-
-            <a href="#" class="btn btn-primary">Let's Start</a>
-
-          </div>
-
-          <figure class="hero-banner">
-            <img src="assets/images/sahil.png" width="680" height="645"
-              alt="Jassa, the blonde, dressed in a green hoodie with a smile on her face" class="w-100">
-          </figure>
-
+          <a href="#" class="btn btn-primary" (click)="scrollToAbout()"
+            >Let's Start</a
+          >
         </div>
-      </section>
 
+        <figure class="hero-banner">
+          <img
+            src="assets/images/sahil.png"
+            width="680"
+            height="645"
+            alt="Jassa, the blonde, dressed in a green hoodie with a smile on her face"
+            class="w-100"
+          />
+        </figure>
+      </div>
+    </section>
 
-
-
-
-      <!-- 
+    <!-- 
         - #CLIENT
       -->
 
-      <section class="client" aria-label="Trusted client">
-        <div class="container">
+    <section class="client" aria-label="Trusted client">
+      <div class="container">
+        <ul class="slider"></ul>
+      </div>
+    </section>
 
-          <ul class="slider"></ul>
-
-        </div>
-      </section>
-
-
-
-
-
-      <!-- 
+    <!-- 
         - #ABOUT
       -->
 
-      <section class="section about" aria-label="about me">
-        <div class="container">
+    <section class="section about" aria-label="about me">
+      <div class="container">
+        <!-- <figure class="about-banner">
+            <img src="assets/images/about-banner.png" width="580" height="554" loading="lazy"
+              alt="Jassa, the blonde, dressed in a black tops with a smile on her face" class="w-100">
+          </figure> -->
 
-          <figure class="about-banner">
-            <!-- <img src="assets/images/about-banner.png" width="580" height="554" loading="lazy"
-              alt="Jassa, the blonde, dressed in a black tops with a smile on her face" class="w-100"> -->
-          </figure>
+        <figure class="about-banner">
+          <video width="580" height="554" autoplay muted loop>
+            <source src="assets/images/video.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        </figure>
 
-          <div class="about-content">
+        <div class="about-content">
+          <h2 class="title-lg">
+            I'm a Front-end Developer with over 4 years of experience.
+          </h2>
 
-            <h2 class="title-lg">I'm a Freelancer Front-end Developer with over 3 years of experience.</h2>
+          <p class="body-md section-text">
+            Welcome to my digital portfolio! I'm Sahil Anand based in Siegen,
+            Germany, a Senior Front-End Developer with a passion for crafting
+            immersive digital experiences. With a versatile skill set
+            encompassing a wide array of technologies, I specialize in
+            leveraging the latest tools and frameworks to bring ideas to life.
+          </p>
 
-            <p class="body-md section-text">
-              I'm a Freelancer Front-end Developer with over 3 years of experience. I'm from San Francisco. I code and
-              create web elements for amazing people around the world. I like work with new people. New people new
-              Experiences.
-            </p>
+          <ul class="about-list">
+            <li>
+              <p class="list-text">
+                <strong class="strong title-md">4+</strong> Years of Experience
+              </p>
+            </li>
 
-            <ul class="about-list">
+            <li>
+              <p class="list-text">
+                <strong class="strong title-md">3</strong>Companies Served
+              </p>
+            </li>
+          </ul>
 
-              <li>
-                <p class="list-text">
-                  <strong class="strong title-md">4+</strong> Years of Experience
-                </p>
-              </li>
+          <div class="wrapper">
+            <a routerLink="/contact" class="btn btn-primary">Contact Me</a>
 
-              <li>
-                <p class="list-text">
-                  <strong class="strong title-md">3</strong>Companies Served
-                </p>
-              </li>
-
-            </ul>
-
-            <div class="wrapper">
-              <a routerLink="/contact" class="btn btn-primary">Contact Me</a>
-
-              <a routerLink="/portfolio" class="btn btn-secondary">Portfolio</a>
-            </div>
-
+            <a routerLink="/portfolio" class="btn btn-secondary">Portfolio</a>
           </div>
-
         </div>
-      </section>
+      </div>
+    </section>
 
-
-
-
-
-      <!-- 
+    <!-- 
         - #SKILL
       -->
 
-      <section class="section skill" aria-labelledby="skill-label">
-        <div class="container">
+    <section class="section skill" aria-labelledby="skill-label">
+      <div class="container">
+        <div class="skill-content">
+          <h2 class="section-title headline-md" id="skill-label">My Skills</h2>
 
-          <div class="skill-content">
-
-            <h2 class="section-title headline-md" id="skill-label">My Skills</h2>
-
-            <ul class="skill-list">
-
-              <li>
-                <div class="card card-sm" style="background-color: hsl(177, 39%, 72%)">
-
-                  <div class="card-media">
-                    <ion-icon name="logo-html5"></ion-icon>
-                  </div>
-
-                  <h2 class="card-title">HTML</h2>
-
+          <ul class="skill-list">
+            <li>
+              <div
+                class="card card-sm"
+                style="background-color: hsl(177, 39%, 72%)"
+              >
+                <div class="card-media">
+                  <ion-icon name="logo-html5"></ion-icon>
                 </div>
-              </li>
 
-              <li>
-                <div class="card card-sm" style="background-color: hsl(41, 99%, 64%)">
+                <h2 class="card-title">HTML</h2>
+              </div>
+            </li>
 
-                  <div class="card-media">
-                    <ion-icon name="logo-css3"></ion-icon>
-                  </div>
-
-                  <h2 class="card-title">CSS</h2>
-
+            <li>
+              <div
+                class="card card-sm"
+                style="background-color: hsl(41, 99%, 64%)"
+              >
+                <div class="card-media">
+                  <ion-icon name="logo-css3"></ion-icon>
                 </div>
-              </li>
 
-              <li>
-                <div class="card card-sm" style="background-color: hsl(19, 97%, 85%)">
+                <h2 class="card-title">CSS</h2>
+              </div>
+            </li>
 
-                  <div class="card-media">
-                    <ion-icon name="logo-react"></ion-icon>
-                  </div>
-
-                  <h2 class="card-title">React JS</h2>
-
+            <li>
+              <div
+                class="card card-sm"
+                style="background-color: hsl(19, 97%, 85%)"
+              >
+                <div class="card-media">
+                  <ion-icon name="logo-react"></ion-icon>
                 </div>
-              </li>
 
-              <li>
-                <div class="card card-sm" style="background-color: hsl(221, 100%, 79%)">
+                <h2 class="card-title">React JS</h2>
+              </div>
+            </li>
 
-                  <div class="card-media">
-                    <ion-icon name="logo-angular"></ion-icon>
-                  </div>
-
-                  <h2 class="card-title">Angular</h2>
-
+            <li>
+              <div
+                class="card card-sm"
+                style="background-color: hsl(221, 100%, 79%)"
+              >
+                <div class="card-media">
+                  <ion-icon name="logo-angular"></ion-icon>
                 </div>
-              </li>
 
-              <li>
-                <div class="card card-sm" style="background-color: hsl(76, 39%, 72%)">
+                <h2 class="card-title">Angular</h2>
+              </div>
+            </li>
 
-                  <div class="card-media">
-                    <ion-icon name="logo-javascript"></ion-icon>
-                  </div>
-
-                  <h2 class="card-title">JavaScript</h2>
-
+            <li>
+              <div
+                class="card card-sm"
+                style="background-color: hsl(76, 39%, 72%)"
+              >
+                <div class="card-media">
+                  <ion-icon name="logo-javascript"></ion-icon>
                 </div>
-              </li>
 
-              <li>
-                <div class="card card-sm" style="background-color: hsl(245, 100%, 90%)">
+                <h2 class="card-title">JavaScript</h2>
+              </div>
+            </li>
 
-                  <div class="card-media">
-                    <ion-icon name="logo-nodejs"></ion-icon>
-                  </div>
-
-                  <h2 class="card-title">NodeJs</h2>
-
+            <li>
+              <div
+                class="card card-sm"
+                style="background-color: hsl(245, 100%, 90%)"
+              >
+                <div class="card-media">
+                  <ion-icon name="logo-nodejs"></ion-icon>
                 </div>
-              </li>
 
-              <li>
-                <div class="card card-sm" style="background-color: hsl(360, 52%, 69%)">
+                <h2 class="card-title">NodeJs</h2>
+              </div>
+            </li>
 
-                  <div class="card-media">
-                    <ion-icon name="logo-docker"></ion-icon>
-                  </div>
-
-                  <h2 class="card-title">Docker</h2>
-
+            <li>
+              <div
+                class="card card-sm"
+                style="background-color: hsl(360, 52%, 69%)"
+              >
+                <div class="card-media">
+                  <ion-icon name="logo-docker"></ion-icon>
                 </div>
-              </li>
 
-              <li>
-                <div class="card card-sm" style="background-color: hsl(54, 10%, 79%)">
+                <h2 class="card-title">Docker</h2>
+              </div>
+            </li>
 
-                  <div class="card-media">
-                    <ion-icon name="logo-github"></ion-icon>
-                  </div>
-
-                  <h2 class="card-title">Github</h2>
-
+            <li>
+              <div
+                class="card card-sm"
+                style="background-color: hsl(54, 10%, 79%)"
+              >
+                <div class="card-media">
+                  <ion-icon name="logo-github"></ion-icon>
                 </div>
-              </li>
 
-            </ul>
-
-          </div>
-
-          <figure class="skill-banner">
-            <img src="assets/images/skill-banner.png" width="581" height="657" loading="lazy"
-              alt="Jassa, the blonde, dressed in a green hoodie with a smile on her face" class="w-100">
-          </figure>
-
+                <h2 class="card-title">Github</h2>
+              </div>
+            </li>
+          </ul>
         </div>
-      </section>
 
+        <figure class="skill-banner">
+          <img
+            src="assets/images/unnamed.jpg"
+            width="581"
+            height="657"
+            loading="lazy"
+            alt="Jassa, the blonde, dressed in a green hoodie with a smile on her face"
+            class="w-100"
+          />
+        </figure>
+      </div>
+    </section>
 
-
-
-
-      <!-- 
+    <!-- 
         - #CTA
       -->
 
-      <section class="cta">
-        <div class="container">
-          <h2 class="title-lg">Intrested working with me?</h2>
+    <section class="cta">
+      <div class="container">
+        <h2 class="title-lg">Intrested working with me?</h2>
 
-          <a routerLink="/contact" class="btn btn-tertiary">Contact Now</a>
-        </div>
-      </section>
+        <a routerLink="/contact" class="btn btn-tertiary">Contact Now</a>
+      </div>
+    </section>
 
-
-
-
-
-      <!-- 
+    <!-- 
         - #TESTIMONIALS
       -->
 
-      <section class="section testi" aria-labelledby="testi-label">
-        <div class="container">
+    <section class="section testi" aria-labelledby="testi-label">
+      <div class="container">
+        <h2 class="headline-md section-title text-center" id="testi-label">
+          Testimonial
+        </h2>
 
-          <h2 class="headline-md section-title text-center" id="testi-label">Testimonial</h2>
+        <ul class="slider">
+          <li class="slider-item card-container">
+            <div class="card card-lg">
+              <div class="card-content">
+                <blockquote class="body-sm">
+                  Sahil was employed as a working student and software engineer
+                  in our company, demonstrated adeptness in identity management,
+                  Linux systems, SailPoint IdentityIQ, Docker, and Java/Angular
+                  development.He fulfilled responsibilities with dedication,
+                  consistently aiming for excellence.
+                </blockquote>
 
-          <ul class="slider">
+                <p class="client-name">Thorsten H. Niebuhr</p>
 
-            <li class="slider-item card-container">
-              <div class="card card-lg">
-
-                <figure class="card-media">
-                  <img src="assets/images/testi-1.jpg" width="100" height="100" loading="lazy" alt="Jennifer Lutheran"
-                    class="img-cover">
-                </figure>
-
-                <div class="card-content">
-
-                  <blockquote class="body-sm">
-                    Dolor lorem is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                    industry's standard dummy text ever since the 1500s.
-                  </blockquote>
-
-                  <p class="client-name">Jennifer Lutheran</p>
-
-                  <p class="client-title">CEO at pxdraft</p>
-
-                </div>
-
+                <p class="client-title">CEO at Wedacon IT GmbH</p>
               </div>
-            </li>
+            </div>
+          </li>
 
-            <li class="slider-item card-container">
-              <div class="card card-lg">
+          <li class="slider-item card-container">
+            <div class="card card-lg">
+              <div class="card-content">
+                <blockquote class="body-sm">
+                  Sahil Anand impressesed me with his meticulous attention to
+                  detail and proactive problem-solving approach. Possessing
+                  strong interpersonal skills, Sahil fosters a positive work
+                  environment and meets deadlines consistently. I highly
+                  recommend him for his commitment, intelligence, and readiness
+                  to embrace challenges.
+                </blockquote>
 
-                <figure class="card-media">
-                  <img src="assets/images/testi-2.jpg" width="100" height="100" loading="lazy" alt="Jennifer Lutheran"
-                    class="img-cover">
-                </figure>
+                <p class="client-name">Mohit Dureja</p>
 
-                <div class="card-content">
-
-                  <blockquote class="body-sm">
-                    Dolor lorem is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                    industry's standard dummy text ever since the 1500s.
-                  </blockquote>
-
-                  <p class="client-name">Jennifer Lutheran</p>
-
-                  <p class="client-title">CEO at pxdraft</p>
-
-                </div>
-
+                <p class="client-title">Project Manager at Infosys Ltd.</p>
               </div>
-            </li>
+            </div>
+          </li>
 
-            <li class="slider-item card-container">
-              <div class="card card-lg">
+          <li class="slider-item card-container">
+            <div class="card card-lg">
+              <div class="card-content">
+                <blockquote class="body-sm">
+                  Sahil was a real pleasure to work with and we look
+                  forward to working with him again. He’s definitely the kind of
+                  Front-End Developer you can trust with a project from start to
+                  finish. His intelligence, commitment, and natural curiosity
+                  make him a standout individual who is poised for success.
+                </blockquote>
 
-                <figure class="card-media">
-                  <img src="assets/images/testi-3.jpg" width="100" height="100" loading="lazy" alt="Jennifer Lutheran"
-                    class="img-cover">
-                </figure>
+                <p class="client-name">Dominik Gern</p>
 
-                <div class="card-content">
-
-                  <blockquote class="body-sm">
-                    Dolor lorem is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                    industry's standard dummy text ever since the 1500s.
-                  </blockquote>
-
-                  <p class="client-name">Jennifer Lutheran</p>
-
-                  <p class="client-title">CEO at pxdraft</p>
-
-                </div>
-
+                <p class="client-title">CEO at SeDoMo GmbH</p>
               </div>
-            </li>
-
-            <li class="slider-item card-container">
-              <div class="card card-lg">
-
-                <figure class="card-media">
-                  <img src="assets/images/testi-4.jpg" width="100" height="100" loading="lazy" alt="Jennifer Lutheran"
-                    class="img-cover">
-                </figure>
-
-                <div class="card-content">
-
-                  <blockquote class="body-sm">
-                    Dolor lorem is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                    industry's standard dummy text ever since the 1500s.
-                  </blockquote>
-
-                  <p class="client-name">Jassa Lutheran</p>
-
-                  <p class="client-title">CEO at pxdraft</p>
-
-                </div>
-
-              </div>
-            </li>
-
-          </ul>
-
-        </div>
-      </section>
-
-    </article>
-  </main>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </article>
+</main>
